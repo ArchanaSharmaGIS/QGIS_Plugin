@@ -1,7 +1,7 @@
 from qgis.PyQt.QtWidgets import QAction, QFileDialog, QMessageBox
 from qgis.core import QgsProject, QgsVectorLayer
 from PyQt5.QtWidgets import QDialog
-from .uploadshapefile_dialog_base import Ui_uploadshapefileDialogBase  # ✅ Correct import
+from .uploadshapefile_dialog_base import Ui_uploadshapefileDialogBase  
 
 import os
 
@@ -27,7 +27,7 @@ class UploadShapefile:
         self.dialog.show()
         self.dialog.exec_()
 
-class UploadShapefileDialog(QDialog, Ui_uploadshapefileDialogBase):  # ✅ Fixed here too
+class UploadShapefileDialog(QDialog, Ui_uploadshapefileDialogBase):  
     def __init__(self):
         super().__init__()
         self.setupUi(self)
