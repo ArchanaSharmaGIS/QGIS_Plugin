@@ -26,7 +26,5 @@ The repository includes:
 
 ---
 
-## ▶️ How to Use
 
-1. Copy the plugin folder to your QGIS plugins directory:
 
